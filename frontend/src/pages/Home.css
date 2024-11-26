@@ -1,0 +1,65 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+p{
+    z-index: 1;
+}
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #EDEDE8;
+    background-image: 
+        linear-gradient(30deg, #e5e5e0 12%, transparent 12.5%, transparent 87%, #e5e5e0 87.5%, #e5e5e0),
+        linear-gradient(150deg, #e5e5e0 12%, transparent 12.5%, transparent 87%, #e5e5e0 87.5%, #e5e5e0),
+        linear-gradient(30deg, #e5e5e0 12%, transparent 12.5%, transparent 87%, #e5e5e0 87.5%, #e5e5e0),
+        linear-gradient(150deg, #e5e5e0 12%, transparent 12.5%, transparent 87%, #e5e5e0 87.5%, #e5e5e0),
+        linear-gradient(60deg, #e5e5e077 25%, transparent 25.5%, transparent 75%, #e5e5e077 75%, #e5e5e077),
+        linear-gradient(60deg, #e5e5e077 25%, transparent 25.5%, transparent 75%, #e5e5e077 75%, #e5e5e077);
+    background-size: 80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+    position: relative;
+    overflow: hidden;
+}
+
+.wrapper::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, transparent 30%, rgba(237,237,232,0.8) 70%);
+    animation: pulse 15s infinite linear;
+    z-index: 0;
+}
+
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+h1 {
+    margin: 0;
+    position: relative;
+    z-index: 2;
+}
+button{
+    padding:20px 40px;
+    border-radius: 20px;
+    border: 1px solid #333;
+    background-color: #D5BDAF;
+    font-weight: 700;
+    color: #333;
+}
+button a{
+    text-decoration: none;
+    color: #333;  
+    cursor: pointer; 
+}

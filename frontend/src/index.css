@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap');
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+html{
+  background: #EDEDE8;
+  color: #1f1f1f;
+  font-family: 'Martian Mono', monospace;
+}

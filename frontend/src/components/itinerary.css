@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Goblin+One&display=swap');
+
+.itinerary {
+    width: 80vw;
+    border: 1px solid #ccc;
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.itinerary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-image: 
+        linear-gradient(45deg, transparent 48%, #f0f0f0 49%, #f0f0f0 51%, transparent 52%),
+        linear-gradient(-45deg, transparent 48%, #f0f0f0 49%, #f0f0f0 51%, transparent 52%);
+    background-size: 30px 30px;
+    opacity: 0.3;
+    border-radius: 4px;
+}
+
+.itinerary::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+    border: 3px solid #f0f0f0;
+    border-radius: 50%;
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+.saved-itineraries {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+}
+
+.saved-itineraries h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.itinerary-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px auto;
+    max-width: 600px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.itinerary-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.timestamp {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.itinerary-preview {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 10px 0;
+}

@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Goblin+One&display=swap');
+.wrapper-form {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EDEDE8;
+}
+
+form {
+    width: 100vw;
+    max-width: 500px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #333;
+    margin: 0 auto;
+    background-color: #EDEDE8;
+}
+
+form input{
+    margin: 10px;
+    height: 40px;
+    width: 100%;
+    border: 1px solid #666;
+    border-radius: 20px;
+    padding: 0px 7px;
+    background-color: white;
+}
+
+.date-inputs {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+.date-inputs input {
+    width: 50%;
+}
+
+form textarea {
+    margin: 10px;
+    height: 80px;
+    width: 100%;
+    border: 1px solid #666;
+    border-radius: 20px;
+    padding: 7px;
+    background-color: white;
+}
+
+label{
+    color: #333;
+    align-self: flex-start;
+    margin-left: 0px;
+}
+
+.date-inputs label {
+    width: 50%;
+    margin: 0;
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+h1{
+    margin-bottom: 30px;
+    align-self: center;
+    color: #333;
+    font-family: 'Goblin One', cursive;
+}
+
+form button {
+    height: 60px;
+    width: 200px;
+    margin: 20px auto;
+    background-color: #1d1d1d;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background-color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    color: #1d1d1d;
+    border: 1px solid #333;
+}

@@ -1,0 +1,42 @@
+.saved-itineraries {
+    text-align: center;
+    padding: 20px;
+}
+
+.itinerary-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.itinerary-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.itinerary-text {
+    font-size: 1.2em;
+    font-family: 'Arial', sans-serif;
+    margin: 10px 0;
+    color: #333;
+}
+
+.itinerary-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.itinerary-link {
+    font-size: 1em;
+    color: #007bff;
+    text-decoration: underline;
+}
